@@ -35,4 +35,4 @@ A simple, responsive React application with Login and Sign-Up screens, routing, 
 [Watch Demo Video](./screenshots/demo.mp4)
 
 ## Live Demo
-[https://login-signup-app-chi.vercel.app/](https://login-signup-app-chi.vercel.app/)
+[Live](https://login-signup-app-chi.vercel.app/)
