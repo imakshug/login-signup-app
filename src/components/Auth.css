@@ -1,0 +1,114 @@
+/* Grouped input rows for compact layout */
+.input-row {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 8px;
+}
+.input-row .input-group {
+  flex: 1;
+}
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  margin: 0;
+  padding: 0;
+}
+.auth-container {
+  max-width: 600px;
+  margin: 48px auto;
+  background: rgba(255,255,255,0.95);
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(44, 62, 80, 0.12);
+  padding: 48px 40px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 22px;
+}
+.auth-container h2 {
+  margin-bottom: 18px;
+  color: #222f3e;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.input-group label {
+  margin-bottom: 4px;
+  font-weight: 600;
+  color: #576574;
+  font-size: 1rem;
+}
+.input-group input {
+  padding: 12px;
+  border: 1.5px solid #dfe6e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+  background: #f8fafc;
+}
+.input-group input:focus {
+  border-color: #5f27cd;
+  box-shadow: 0 0 0 2px #dfe4ea;
+}
+.error-msg {
+  color: #ee5253;
+  font-size: 13px;
+  margin-top: 2px;
+  font-weight: 500;
+}
+.auth-btn {
+  width: 100%;
+  padding: 13px;
+  background: linear-gradient(90deg, #5f27cd 0%, #54a0ff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.08rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+  align-self: center;
+}
+.auth-btn:hover {
+  background: linear-gradient(90deg, #341f97 0%, #2e86de 100%);
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.12);
+}
+.link-btn {
+  background: none;
+  border: none;
+  color: #5f27cd;
+  cursor: pointer;
+  font-size: 15px;
+  text-decoration: underline;
+  margin-left: 4px;
+  align-self: flex-end;
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .input-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .auth-container {
+    max-width: 99vw;
+    padding: 12px 2px;
+    gap: 10px;
+  }
+  .auth-btn {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .input-group {
+    gap: 4px;
+  }
+}
