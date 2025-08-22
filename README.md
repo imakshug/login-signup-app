@@ -29,8 +29,15 @@ A simple, responsive React application with Login and Sign-Up screens, routing, 
 2. Include a brief README file with instructions on how to run the application locally.
 3. Provide screenshots or a live demo link showcasing your app.
 
-## Screenshots
-Add screenshots of Login and Sign-Up screens here after running the app.
+
+## Screenshots & Demo
+
+### Screenshots
+![Login Screen](./screenshots/login.png)
+![Sign-Up Screen](./screenshots/signup.png)
+
+### Demo Video
+[Watch Demo Video](./screenshots/demo.mp4)
 
 ## Live Demo
 If deployed, add your live demo link here.

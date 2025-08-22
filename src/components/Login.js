@@ -11,11 +11,11 @@ const Login = () => {
   const validate = () => {
     let errs = {};
     // Username: alphanumeric + special chars
-    if (!/^[\w!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+$/.test(form.username)) {
+    if (!/^[\w!@#$%^&*()_+\-=\[\]{};':"\\|,.<>/?]+$/.test(form.username)) {
       errs.username = 'Username must be alphanumeric and may include special characters.';
     }
     // Password: same as username, but not equal to username
-    if (!/^[\w!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+$/.test(form.password)) {
+    if (!/^[\w!@#$%^&*()_+\-=\[\]{};':"\\|,.<>/?]+$/.test(form.password)) {
       errs.password = 'Password must be alphanumeric and may include special characters.';
     }
     if (form.password === form.username) {

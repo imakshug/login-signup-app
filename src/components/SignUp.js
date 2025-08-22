@@ -19,14 +19,15 @@ const SignUp = () => {
     let errs = {};
     // Name: only alphabets
     if (!/^[A-Za-z ]+$/.test(form.name)) {
+        
       errs.name = 'Name must contain only alphabets.';
     }
     // Username: alphanumeric + special chars
-    if (!/^[A-Za-z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+$/.test(form.username)) {
+    if (!/^[A-Za-z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>/?]+$/.test(form.username)) {
       errs.username = 'Username must be alphanumeric and may include special characters.';
     }
     // Password: same as username, but not equal to username
-    if (!/^[A-Za-z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+$/.test(form.password)) {
+    if (!/^[A-Za-z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>/?]+$/.test(form.password)) {
       errs.password = 'Password must be alphanumeric and may include special characters.';
     }
     if (form.password === form.username) {
